@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Vue Chrome",
+            "url": "http://localhost:5173",
+            "webRoot": "${workspaceFolder}",
+            // 디버깅할때 편해짐
+            "sourceMaps": true,
+            // 뷰를 쪼갤건데...뭐라고?
+            "trace": true,
+            // 여러가지 에러 추적 옵션
+            "skipFiles": [
+              "${workspaceFolder}/node_modules/**",
+              "**/@vite/**"
+              // 앞에 경로 뒷경로가 뭐가 되든 중간경로에 **포함 되어있다면 다 제외시키겠다
+            ]
+            // 우리가 만들지 않은 기능들. 모든 파일들을 디버깅에서 제외하겠다
+            //뷰 디버깅 세팅
+        }
+    ]
+}
