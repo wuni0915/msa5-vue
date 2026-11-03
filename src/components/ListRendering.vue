@@ -18,7 +18,6 @@ const items = ref([
     food: '돈까스'
   }
 ]);
-//레프에 세팅된 값이 자동으로 바꼈을때 ... ref로 하는 이유?
 </script>
 
 <template>
